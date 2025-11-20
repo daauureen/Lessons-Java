@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class WhileLoops {
     public static void main(String[] args) {
         boolean t = 5<2;
@@ -31,5 +32,30 @@ public class WhileLoops {
         System.out.println("Numba: " + i);
         i++; // Увеличиваем i на 1
         }
+
+
+        int timer = 10;
+        while(timer > 0) {
+            
+            System.out.println(timer + "...");
+
+            timer--;
+        }
+        System.out.println("Start");
+
+
+
+
+        
+
+        Scanner scanner = new Scanner(System.in);
+        String answer = "";
+
+        while (!answer.equals("exit")) {
+            System.out.println("Write the comand: ");
+            answer = scanner.nextLine();
+            System.out.println("U said " + answer);
+        }
+        System.out.println("Program ends");
     }
 }
