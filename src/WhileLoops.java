@@ -57,5 +57,6 @@ public class WhileLoops {
             System.out.println("U said " + answer);
         }
         System.out.println("Program ends");
+        scanner.close();
     }
 }
