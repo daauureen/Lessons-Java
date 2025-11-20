@@ -123,6 +123,10 @@ public class Strings {
         String message2 = "My name is " + name1 + ", " + "I am " + age + "years old.";
         String message3 = String.format("Меня зовут %s, мне %d лет", name, age);
         String message4 = "Меня зовут %s, мне %d лет".formatted(name, age);
+        System.out.println(message2);
+        System.out.println(message3);
+        System.out.println(message4);
+
 
 
 
@@ -146,5 +150,24 @@ public class Strings {
         System.out.println(word1 == word2);      // true - один объект в пуле
         System.out.println(word1 == word3);      // false - разные объекты
         System.out.println(word1.equals(word3)); // true - содержимое одинаковое
+
+
+        // ❌ МЕДЛЕННО! Создаётся много объектов
+        String result = "";
+        for (int i = 0; i < 1000; i++) {
+            result += i; // На каждой итерации создаётся новая строка!
+        }
+        System.out.println(result);
+
+
+        // ✅ БЫСТРО! Изменяемый StringBuilder
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 1000; i++) {
+            sb.append(i);
+        }
+        String result1 = sb.toString();
+        System.out.println(result1);
+
+        
     }
 }
