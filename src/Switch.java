@@ -15,6 +15,9 @@ public class Switch {
             case "18":
                 System.out.println("Thanks");
                 break;
+            case "99":
+                System.out.println("Nooo");
+                break;
             default:
                 System.out.println("Error");
         }
