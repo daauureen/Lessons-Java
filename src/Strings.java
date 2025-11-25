@@ -158,7 +158,7 @@ public class Strings {
             result += i; // На каждой итерации создаётся новая строка!
         }
         System.out.println(result);
-
+        
 
         // ✅ БЫСТРО! Изменяемый StringBuilder
         StringBuilder sb = new StringBuilder();
