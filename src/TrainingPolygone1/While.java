@@ -40,5 +40,6 @@ public class While {
             System.out.println(n + "");
             n--;
         }
+        sc.close();
     }
 }

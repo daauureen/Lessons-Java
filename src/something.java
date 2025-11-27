@@ -6,5 +6,6 @@ public class something {
         System.out.print("Input: ");
         String dauren = scanner.nextLine();
         System.out.println("u wrote u are " + dauren);
+        scanner.close();
     }
 }

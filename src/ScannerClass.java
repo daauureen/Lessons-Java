@@ -6,5 +6,6 @@ public class ScannerClass {
         System.out.println("Input something");
         String string = sc.nextLine();
         System.out.println("You inputted: " + string);
+        sc.close();
     }
 }

@@ -21,5 +21,6 @@ public class Switch {
             default:
                 System.out.println("Error");
         }
+        scanner.close();
     }
 }

@@ -9,5 +9,6 @@ public class DoWhile {
             value = scanner.nextInt();
         } while (value != 5);
         System.out.println("You wrote 5");
+        scanner.close();
     }
 }

@@ -16,6 +16,7 @@ public class App {
         double b = sc.nextDouble();
 
         double result;
+        sc.close();
 
         switch (operator) {
             case '+':
