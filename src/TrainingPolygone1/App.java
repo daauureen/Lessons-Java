@@ -9,7 +9,7 @@ public class App {
         System.out.print("Input first number: ");
         double a = sc.nextDouble(); 
 
-        System.out.print("Input operator ( + , - , * , / , % )");
+        System.out.print("Input operator ( + , - , * , /)");
         char operator = sc.next().charAt(0);
 
         System.out.print("Input second number: ");
