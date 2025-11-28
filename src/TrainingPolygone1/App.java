@@ -7,7 +7,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         
         System.out.print("Input first number: ");
-        double a = sc.nextDouble();
+        double a = sc.nextDouble(); 
 
         System.out.print("Input operator ( + , - , * , / , % )");
         char operator = sc.next().charAt(0);
