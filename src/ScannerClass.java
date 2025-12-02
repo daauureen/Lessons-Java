@@ -16,5 +16,7 @@ public class ScannerClass {
         float res3 = num1 / num2;
 
         System.out.println(res + "\n" + res1 + "\n" + res2 + "\n" + res3);
+        
+        scanner.close();
     }
 }

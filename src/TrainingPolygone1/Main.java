@@ -10,5 +10,6 @@ public class Main {
         String names = sc.nextLine();
         String[] splitNames = names.split(", ");
         System.out.println(Arrays.toString(splitNames));
+        sc.close();
     }
 }
