@@ -2,10 +2,19 @@ import java.util.Scanner;
 
 public class ScannerClass {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Input something");
-        String string = sc.nextLine();
-        System.out.println("You inputted: " + string);
-        sc.close();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Input first number: ");
+        float num1 = scanner.nextFloat();
+
+        System.out.print("Input seconf number: ");
+        float num2 = scanner.nextFloat();
+
+        float res = num1 + num2;
+        float res1 = num1 - num2;
+        float res2 = num1 * num2;
+        float res3 = num1 / num2;
+
+        System.out.println(res + "\n" + res1 + "\n" + res2 + "\n" + res3);
     }
 }
