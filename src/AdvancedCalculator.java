@@ -27,16 +27,16 @@ import java.util.Map;
  */
 public class AdvancedCalculator {
 
-    // ----------------------
+
     // Entry point
-    // ----------------------
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new CalculatorFrame().setVisible(true));
     }
 
-    // ----------------------
+    
     // CalculatorFrame: the GUI
-    // ----------------------
+
     public static class CalculatorFrame extends JFrame {
         private final JTextField display = new JTextField();
         private final JTextArea historyArea = new JTextArea(8, 20);
@@ -134,9 +134,7 @@ public class AdvancedCalculator {
             return b;
         }
 
-        // ----------------------
         // Input handling
-        // ----------------------
         private void onInput(String label) {
             if (label.equals("+/-")) {
                 toggleSign();
@@ -259,9 +257,8 @@ public class AdvancedCalculator {
         }
     }
 
-    // ----------------------
     // CalculatorEngine: OOP core
-    // ----------------------
+
     public static class CalculatorEngine {
         private Double leftOperand = null;
         private String pendingOp = null; // symbol
@@ -335,9 +332,9 @@ public class AdvancedCalculator {
         }
     }
 
-    // ----------------------
+
     // Operations (OOP)
-    // ----------------------
+
     public interface BinaryOperation {
         double apply(double a, double b);
     }
