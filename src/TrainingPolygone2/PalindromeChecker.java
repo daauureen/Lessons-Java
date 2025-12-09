@@ -2,10 +2,8 @@ package TrainingPolygone2;
 
 public class PalindromeChecker {
     public static boolean main(String s) {
-        // Приводим строку к нижнему регистру
-        String str = s.toLowerCase();
         
-        // Сравниваем символы с начала и с конца
+        String str = s.toLowerCase();
         int left = 0;
         int right = str.length() - 1;
         
