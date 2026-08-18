@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//switch statement
 public class Switch {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
